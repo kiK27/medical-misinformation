@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Misinformation Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Paste Your Medical Article</h1>
+  <form method="POST">
+    <textarea name="article_text" rows="12" cols="80" placeholder="Paste article text here..."></textarea><br><br>
+    <input type="submit" value="Analyze">
+  </form>
+
+  {% if results %}
+    <h2>Analysis:</h2>
+    {% for r in results %}
+      <div class="result-card {% if r.status == 'verified' %}verified{% elif r.status == 'uncertain' %}uncertain{% elif r.status == 'misinfo' %}misinfo{% endif %}">
+        <strong>{{ r.sentence }}</strong><br>
+        <small>Similarity Score: {{ r.similarity }}</small><br><br>
+
+        {% if r.status == 'verified' %}
+          ✅ <strong style="color:green;">Verified Claim</strong><br>
+
+        {% elif r.status == 'uncertain' %}
+          ❓ <strong style="color:orange;">Uncertain / needs review</strong><br>
+
+        {% elif r.status == 'misinfo' %}
+          ⚠️ <strong style="color:red;">Potential Misinformation</strong><br>
+
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>

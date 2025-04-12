@@ -1,0 +1,52 @@
+[
+  {
+    "claim": "High blood pressure increases the risk of heart disease and stroke, and it often has no warning signs.",
+    "topic": "hypertension",
+    "source": "CDC"
+  },
+  {
+    "claim": "Lifestyle changes such as a healthy diet, regular exercise, reducing salt intake, and avoiding tobacco use can help lower blood pressure.",
+    "topic": "hypertension",
+    "source": "AHA"
+  },
+  {
+    "claim": "Prescription blood pressure medications are safe and effective when taken as directed by a healthcare professional.",
+    "topic": "hypertension",
+    "source": "Mayo Clinic"
+  },
+  {
+    "claim": "It is not safe to stop taking prescribed blood pressure medication without consulting a doctor.",
+    "topic": "hypertension",
+    "source": "Mayo Clinic"
+  },
+  {
+    "claim": "Drinking herbal teas or meditating may help reduce stress, but they should not replace medical treatment for high blood pressure.",
+    "topic": "hypertension",
+    "source": "NIH"
+  },
+  {
+    "claim": "Exercise and a low-sodium diet both play important roles in managing high blood pressure.",
+    "topic": "hypertension",
+    "source": "AHA"
+  },
+  {
+    "claim": "The DASH diet is an evidence-based approach to reducing blood pressure.",
+    "topic": "diet",
+    "source": "NIH"
+  },
+  {
+    "claim": "Some people may require medication even with healthy lifestyle changes to manage their blood pressure.",
+    "topic": "hypertension",
+    "source": "CDC"
+  },
+  {
+    "claim": "Untreated high blood pressure can lead to serious complications such as kidney damage, heart failure, and vision loss.",
+    "topic": "hypertension",
+    "source": "AHA"
+  },
+  {
+    "claim": "Regular blood pressure monitoring is essential for early detection and management of hypertension.",
+    "topic": "hypertension",
+    "source": "NIH"
+  }
+]

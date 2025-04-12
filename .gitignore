@@ -1,0 +1,21 @@
+# Bytecode
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+
+# Sensitive keys
+*.env
+openai_key.txt
+
+# Database files
+*.db
+
+# Jupyter checkpoints (if any)
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db

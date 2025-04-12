@@ -1,0 +1,99 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #005f73;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 90%;
+  max-width: 800px;
+  height: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  background-color: #fff;
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #008891;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #005f73;
+}
+
+/* Section title */
+h2 {
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Result card styles */
+.result-card {
+  background-color: #fff;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #008891;
+  transition: transform 0.2s ease;
+}
+
+.result-card:hover {
+  transform: scale(1.01);
+}
+
+/* Status-specific colors */
+.result-card.verified {
+  border-left-color: #2e7d32; /* green */
+}
+
+.result-card.uncertain {
+  border-left-color: #f9a825; /* amber/orange */
+}
+
+.result-card.misinfo {
+  border-left-color: #c1121f; /* red */
+}
+
+/* Text highlights inside card */
+.result-card strong {
+  display: block;
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.result-card small {
+  display: block;
+  color: #555;
+  font-size: 14px;
+}
